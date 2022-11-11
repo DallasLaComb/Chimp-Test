@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="mystyle.css" />
 	</head>
 	<body>
-		<nav id="nav-placeholder"></nav>
 		<div class="body" id="content">
 			<h1 id="roundNumberLOL">Initial Text</h1>
 			<div class="middle">
@@ -25,7 +24,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script>
 		$(".continue").click(() => {
-			$("#content").load("game.html");
+			$("#content").load("index.html");
 		});
 		document.getElementById("roundNumberLOL").innerHTML =
 			"Round: " + (parseInt(round) + 1).toString();
