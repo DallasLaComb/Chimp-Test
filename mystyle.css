@@ -1,0 +1,53 @@
+.active:hover {
+	cursor: pointer;
+	border: 5px solid rgba(243, 234, 238, 0.9);
+	color: white;
+}
+
+.active {
+	border: 8px solid rgba(243, 234, 238, 0.5);
+}
+
+body {
+	background-color: #1196f3;
+	text-align: center;
+}
+
+.btn {
+	text-align: center;
+	font-size: 2.2em;
+	font-weight: bold;
+	line-height: 70px;
+	color: white;
+	height: 100px;
+	width: 100px;
+	margin: 3px;
+}
+.game-container {
+	display: inline-block;
+	margin: 10px auto;
+	width: auto;
+}
+:not(.active).btn {
+	opacity: 0;
+	cursor: default;
+}
+
+/*MOBILE PHONES below ^ 360 x 640 --*/
+@media only screen and (max-width: 768px) {
+	.btn {
+		height: 10px;
+		width: 10px;
+		line-height: 6vw;
+		font-size: 2.2em;
+		text-align: center;
+		padding: 0;
+	}
+	.active {
+		border-width: 3px;
+	}
+	.game-container {
+		margin: 10px auto;
+		width: auto;
+	}
+}
